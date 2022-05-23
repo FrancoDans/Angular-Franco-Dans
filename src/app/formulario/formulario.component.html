@@ -1,0 +1,10 @@
+
+<h1>Completa el formulario para mas información:</h1>
+<hr>
+<form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+
+    Nombre: <input type="text" formControlName="nombre" placeholder=Nombre>
+    Apellido: <input type="text" formControlName="apellido" placeholder=ApELLIDO>
+    Email: <input type="text" formControlName="Email" placeholder=Email>
+    <button type="submit" class="btn btn-dangerous">Enviar</button>
+</form>
