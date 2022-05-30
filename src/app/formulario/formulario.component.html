@@ -1,10 +1,18 @@
-
+<div class="form">
 <h1>Completa el formulario para mas información:</h1>
-<hr>
-<form [formGroup]="formularioContacto" (ngSubmit)="submit()">
 
+
+
+<form [formGroup]="formularioContacto" (ngSubmit)="submit()" class="formulario">
+    
     Nombre: <input type="text" formControlName="nombre" placeholder=Nombre>
-    Apellido: <input type="text" formControlName="apellido" placeholder=ApELLIDO>
-    Email: <input type="text" formControlName="Email" placeholder=Email>
-    <button type="submit" class="btn btn-dangerous">Enviar</button>
+    <!-- <span *ngIf="formularioContacto.get('nombre')?.errors?.['required']">Requerido </span>  -->
+    Curso: <input type="text" formControlName="curso" placeholder=Curso >
+    Email: <input type="text"  formControlName="email" placeholder=example@example.com>
+    Tel: <input type="number" formControlName="tel" placeholder="Ej: 1154371288" required>
+    <button type="submit" class="btn">Enviar</button>
 </form>
+
+    
+    
+</div>

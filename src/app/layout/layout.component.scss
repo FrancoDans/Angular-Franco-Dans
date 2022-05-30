@@ -1,33 +1,40 @@
 h1{
     text-align: center; 
-font-family: Arial Black; 
-font-weight: bold; 
-font-size: 30px; 
-color: rgb(16, 17, 15); 
-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+     font-size: 60px; 
+    color: #07a16b; 
+    text-shadow: -1px 0 #07a16b, 0 7px #414D68, 1px 0 #414D68, 0 -1px #414D68, 
+    -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 
+    3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px
+     6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    margin: 20px; 
+    }
+  
 .topnav {
-    background-color: #333;
+    background-color: #414D68;
     overflow: hidden;
     
   }
 
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color:#e2eae7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    font-family: monospace;
+   font-weight: bold;
   }
   
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #07a16b;
   }
 
   .topnav a.active {
-    background-color: #427a66;
-    color: white;
+    background-color: #07a16b;
+    color: #eaeaea;
+    
   }

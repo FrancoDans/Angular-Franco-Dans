@@ -1,10 +1,68 @@
 .example-card {
-    max-width: 400px;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+    max-width: 1000px;
+    margin: 60px;
+    margin-right: 20px;
+    margin-left: 110px;
 
+  }
   
+  p{
+      font-family: monospace;
+      font-weight: bold;
+  } 
+  
+.example-header-image {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/roles-computer-it/128/front-end_developer-2-512.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    /* Color del texo */
+    
+    color: #07a16b;
+    /* Eliminar color de fondo */
+    
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    
+    border: 2px solid #07a16b;
+    /* Añadir esquinas curvadas */
+    
+    border-radius: 6px;
+    /* Poner texto en mayúsculas */
+    
+    border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+          text-decoration: none;
+          text-transform: uppercase;
+    }
+    .btn {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #07a16b;
+          font-family: monospace;
+          font-weight: bold;
+    }
+    /* Al poner el curso encima (hover) */
+    
+    .btn:hover {
+          background-color: #07a16b;
+          color: white;
+     }
+     .title-cards{
+      margin-top: 10px;
+      font-family: Comic;
+      font-weight: bold; 
+      font-size: 30px; 
+      color: #000000; 
+     
+      }

@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutComponent } from './layout/layout.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { ConversorPipe } from './conversor.pipe';
+import { TituloDirective } from './titulo.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     LayoutComponent,
     ToolbarComponent,
     FormularioComponent,
+    ConversorPipe,
+    TituloDirective,
     
   ],
   imports: [
