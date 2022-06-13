@@ -12,6 +12,22 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ConversorPipe } from './conversor.pipe';
 import { TituloDirective } from './titulo.directive';
+import {AppRoutingModule} from "./app-routing.module"
+import { RouterModule } from '@angular/router';
+import { InfoCursoComponent } from './info-curso/info-curso.component';
+import { HomeComponent } from './home/home.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { InscripcionComponent } from './inscripcion/inscripcion.component';
+
+const appRoutes=[
+  {path:'', component:HomeComponent },
+  {path:'info', component:InfoCursoComponent },
+  {path:'contacto', component:ContactoComponent },
+  {path:'inscribirse', component:InscripcionComponent },
+  
+
+]
+
 
 @NgModule({
   declarations: [
@@ -23,6 +39,10 @@ import { TituloDirective } from './titulo.directive';
     FormularioComponent,
     ConversorPipe,
     TituloDirective,
+    InfoCursoComponent,
+    HomeComponent,
+    ContactoComponent,
+    InscripcionComponent
     
   ],
   imports: [
@@ -31,6 +51,10 @@ import { TituloDirective } from './titulo.directive';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
+
+    
     
   ],
   providers: [],
