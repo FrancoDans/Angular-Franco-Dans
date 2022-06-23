@@ -18,12 +18,18 @@ import { InfoCursoComponent } from './info-curso/info-curso.component';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
+import { SobrenostrosComponent } from './sobrenostros/sobrenostros.component'
+
 
 const appRoutes=[
   {path:'', component:HomeComponent },
   {path:'info', component:InfoCursoComponent },
   {path:'contacto', component:ContactoComponent },
   {path:'inscribirse', component:InscripcionComponent },
+  {path:'nosotros', component:SobrenostrosComponent }
+
   
 
 ]
@@ -42,7 +48,9 @@ const appRoutes=[
     InfoCursoComponent,
     HomeComponent,
     ContactoComponent,
-    InscripcionComponent
+    InscripcionComponent,
+    UsersComponent,
+    SobrenostrosComponent
     
   ],
   imports: [
@@ -52,6 +60,7 @@ const appRoutes=[
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
 
     
